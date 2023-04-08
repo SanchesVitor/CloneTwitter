@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O CloneTwitter, nada mais é que, um pequeno clone da interface do Twitter, para a prática em React.js proposta pela Rocketseat no evento da Masterclass .
 
-- [Visite o projeto online](https://sanchesvitor.github.io/CloneTwitter/)
+- [Visite o projeto online](https://sanches-vitor-clone-twitter.vercel.app/)
 
 ---
 
