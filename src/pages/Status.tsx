@@ -1,9 +1,10 @@
-import { FormEvent, useState } from "react"
+import { FormEvent, KeyboardEvent, useState } from "react"
 import { Header } from "../components/Header"
 import { Separator } from "../components/Separator"
 import { Tweet } from "../components/Tweet"
 
 import './Status.css'
+import { PaperPlaneRight } from "phosphor-react"
 
 export function Status() {
   const [ newAnswer, setNewAnswer ] = useState('')
@@ -18,6 +19,13 @@ export function Status() {
 
     setAnswers([newAnswer, ...answers])
     setNewAnswer('')
+  }
+
+  function handleHotkeySubmit(event: KeyboardEvent) {
+    if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+      setAnswers([newAnswer, ...answers])
+      setNewAnswer('')
+    }
   }
   
   return (
@@ -35,13 +43,17 @@ export function Status() {
            id='tweet' 
            placeholder="Tweet your answer" 
            value={newAnswer}
+           onKeyDown={handleHotkeySubmit}
            onChange={(event) => {
             setNewAnswer(event.target.value)
            }}
           />
         </label>
 
-        <button type='submit'>Answer</button>
+        <button type='submit'>
+          <PaperPlaneRight />
+         <span>Answer</span> 
+        </button>
       </form>
 
               
