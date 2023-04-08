@@ -9,9 +9,9 @@ import { PaperPlaneRight } from "phosphor-react"
 export function Status() {
   const [ newAnswer, setNewAnswer ] = useState('')
   const [ answers, setAnswers ] = useState([
-    'Concordo...',
-    'Olha, faz sentido!',
-    'Parabéns pelo progresso.'
+    'Coloca seu Tweet ae!!',
+    'Avançando com os estudos',
+    'Obrigado por interagir!.'
   ])
   
   function createNewAnswer(event: FormEvent) {
@@ -32,7 +32,7 @@ export function Status() {
     <main className="status">
       <Header title='Tweet' />
     
-      <Tweet content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus quas veritatis maiores repellat labore consequatur dolorum voluptatem suscipit, optio harum praesentium commodi ipsum quod quaerat ab accusantium porro aspernatur?"/>
+      <Tweet content="Fala ae galera, este é meu primeiro projeto com React.Js, estou desenvolendo esse pequeno projeto que na verdade é um clone do Twitter, com algumas interações, como exemplo, na caixa abaixo, digite um comentário para meu Tweet e clique em 'enviar' "/>
 
       <Separator />
 

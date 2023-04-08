@@ -8,9 +8,9 @@ import './Timeline.css'
 export function Timeline() {
   const [ newTweet, setNewTweet ] = useState('')
   const [ tweets, setTweets ] = useState([
-    'Meu primeiro tweet',
-    'Teste',
-    'Deu certo tweetar'
+    'Faça seu Tweet logo a cima',
+    'Meu primeiro projeto em React',
+    'Clique em algum Tweet para fazer um comentário!'
   ])
   
   function createNewTweet(event: FormEvent) {
